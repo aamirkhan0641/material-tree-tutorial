@@ -9,6 +9,7 @@ import { MaterialModule } from './service/material-module';
 import { AddNodeComponent, NewNodeDialog } from './theme/add-node/add-node.component';
 import { EditNodeComponent, EditNodeDialog } from './theme/edit-node/edit-node.component';
 import { DeleteNodeComponent } from './theme/delete-node/delete-node.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { DeleteNodeComponent } from './theme/delete-node/delete-node.component';
     BrowserModule,
     MaterialModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
